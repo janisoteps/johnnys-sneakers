@@ -1,5 +1,15 @@
 <a [routerLink]="['/']">
-    <h1>My Store</h1>
+    <h1>Johnny's Sneakers</h1>
 </a>
 
-<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+<a
+    class="button fancy-button"
+    [ngStyle]="{display: 'flex', justifyContent: 'space-between'}"
+>
+    <i class="material-icons">shopping_cart</i>
+    <div
+        [ngStyle]="{}"
+    >
+        Checkout
+    </div>
+</a>

@@ -1,0 +1,12 @@
+.item-list-card {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding-bottom: 0px;
+    display: inline-grid;
+    box-shadow: 1px 3px 6px 2px rgb(0 0 0 / 5%);
+}
+
+

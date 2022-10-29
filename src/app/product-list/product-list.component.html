@@ -1,22 +1,41 @@
-<h2>Products</h2>
+<h1><b>Walk on the clouds</b></h1>
 
-<div *ngFor="let product of products">
-    <h3>
+<div class="item-list-card" *ngFor="let product of products">
+    <h3
+        [ngStyle]="{textAlign: 'center'}"
+    >
         <a [title]="product.name + ' details'">
             {{ product.name }}
         </a>
     </h3>
 
-    <p *ngIf="product.price">
-        Price: ${{ product.price }}
+    <div
+        #square
+        [ngStyle]="{'background-image': 'url(' + product.img + ')', backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative', width: '96%', height: 0, paddingBottom: '110%', margin: '0 auto', borderRadius: '10px'}"
+    >
+
+    </div>
+
+    <p
+        *ngIf="product.price"
+        [ngStyle]="{padding: '10px', fontWeight: 400}"
+    >
+        <b>Price: ${{ product.price }}</b>
     </p>
 
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
+    <p
+        *ngIf="product.description"
+        [ngStyle]="{padding: '10px'}"
+    >
+        {{ product.description }}
     </p>
 
-    <button type="button" (click)="share()">
-        Share
+    <button
+        type="button"
+        (click)="share()"
+        [ngStyle]="{textAlign: 'center'}"
+    >
+        Buy
     </button>
 
     <app-product-alerts
