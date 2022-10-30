@@ -1,0 +1,26 @@
+<h3
+    [ngStyle]="{width: '100%', textAlign: 'center'}"
+>
+    Cart
+</h3>
+
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }}</span>
+    <span>{{ item.price | currency }}</span>
+</div>
+
+<div
+    *ngIf="items.length > 0"
+>
+    <button
+        type="button"
+        [ngStyle]="{textAlign: 'center'}"
+        (click)="clearShoppingCart()"
+    >
+        Clear cart
+    </button>
+
+    <p>
+        <a routerLink="/shipping">Shipping Prices</a>
+    </p>
+</div>
