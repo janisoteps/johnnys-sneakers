@@ -8,6 +8,35 @@ export interface Product {
 
 export const products: Array<Product> = [
     {
+        id: 9,
+        name: 'Plomper',
+        price: 299,
+        description: 'The Plomper sneaker is a comfortable and stylish shoe that is perfect for everyday wear. With a padded collar and tongue, this shoe provides support and cushioning for your feet, while the breathable mesh upper keeps them cool and dry. The Plomper also features a durable rubber outsole that provides traction and stability, making it a great choice for walking or running.',
+        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg'
+    },
+    {
+        id: 10,
+        name: 'Plomper GT',
+        price: 469,
+        description: 'The Plomper GT is a bigger and more luxurious sneaker compared to the normal sneaker model Plomper. It is made with high quality materials and is very comfortable to wear. This sneaker is perfect for those who want to make a statement and stand out from the crowd.',
+        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/ryan-plomp-PGTO_A0eLt4-unsplash.jpg'
+    },
+    {
+        id: 11,
+        name: 'Usama A',
+        price: 729,
+        description: '\n' +
+            'Introducing the Usama A sneaker, the first Japanese made sneaker made from whale skin. This luxurious sneaker is handcrafted from the finest whale skin, making it ultra soft and comfortable. The unique texture of the whale skin gives the Usama A sneaker a one-of-a-kind look that is sure to turn heads. The Usama A sneaker is also environmentally friendly, as whale skin is a sustainable and renewable resource.',
+        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/usama-akram-kP6knT7tjn4-unsplash.jpg'
+    },
+    {
+        id: 12,
+        name: 'Xavier',
+        price: 29,
+        description: 'Introducing Xavier, the first ever Spanish-made sneaker made from Jamon! This unique sneaker is handcrafted from premium quality Jamon, ensuring that each pair is unique and of the highest quality. With a comfortable fit and a stylish design, Xavier is perfect for any fashion-savvy individual who wants to make a statement.',
+        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/xavier-teo-SxAXphIPWeg-unsplash.jpg'
+    },
+    {
         id: 1,
         name: 'Capece D',
         price: 399,
@@ -62,34 +91,5 @@ export const products: Array<Product> = [
         price: 339,
         description: 'The Pat Kwon sneaker from our e-shop is perfect for the modern man on the go. This stylish sneaker features a sleek design with a comfortable fit, making it ideal for everyday wear. The Pat Kwon sneaker is also versatile enough to be dressed up or down, making it a must-have in your wardrobe.',
         img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/pat-kwon-EJTjetc8tPs-unsplash.jpg'
-    },
-    {
-        id: 9,
-        name: 'Plomper',
-        price: 299,
-        description: 'The Plomper sneaker is a comfortable and stylish shoe that is perfect for everyday wear. With a padded collar and tongue, this shoe provides support and cushioning for your feet, while the breathable mesh upper keeps them cool and dry. The Plomper also features a durable rubber outsole that provides traction and stability, making it a great choice for walking or running.',
-        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg'
-    },
-    {
-        id: 10,
-        name: 'Plomper GT',
-        price: 469,
-        description: 'The Plomper GT is a bigger and more luxurious sneaker compared to the normal sneaker model Plomper. It is made with high quality materials and is very comfortable to wear. This sneaker is perfect for those who want to make a statement and stand out from the crowd.',
-        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/ryan-plomp-PGTO_A0eLt4-unsplash.jpg'
-    },
-    {
-        id: 11,
-        name: 'Usama A',
-        price: 729,
-        description: '\n' +
-            'Introducing the Usama A sneaker, the first Japanese made sneaker made from whale skin. This luxurious sneaker is handcrafted from the finest whale skin, making it ultra soft and comfortable. The unique texture of the whale skin gives the Usama A sneaker a one-of-a-kind look that is sure to turn heads. The Usama A sneaker is also environmentally friendly, as whale skin is a sustainable and renewable resource.',
-        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/usama-akram-kP6knT7tjn4-unsplash.jpg'
-    },
-    {
-        id: 12,
-        name: 'Xavier',
-        price: 29,
-        description: 'Introducing Xavier, the first ever Spanish-made sneaker made from Jamon! This unique sneaker is handcrafted from premium quality Jamon, ensuring that each pair is unique and of the highest quality. With a comfortable fit and a stylish design, Xavier is perfect for any fashion-savvy individual who wants to make a statement.',
-        img: 'https://johnnys-sneakers.s3.eu-central-1.amazonaws.com/xavier-teo-SxAXphIPWeg-unsplash.jpg'
     }
 ];
