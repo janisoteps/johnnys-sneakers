@@ -1,0 +1,29 @@
+
+<div
+    *ngIf="product"
+    [ngStyle]="{position: 'relative', width: '100%', paddingBottom: '100px'}"
+>
+    <div
+        [ngStyle]="{width: '100%', maxWidth: '900px', margin: '0px auto'}"
+    >
+        <div
+            [ngStyle]="{width: '100%', display: 'flex', justifyContent: 'center'}"
+        >
+            <img
+                [src]="product.img"
+                [ngStyle]="{width: '100%', maxWidth: '700px', height: 'auto', margin: '50px auto'}"
+            />
+        </div>
+
+        <h1>{{ product.name }}</h1>
+        <h4>{{ product.price | currency }}</h4>
+        <p>{{ product.description }}</p>
+
+        <button
+            type="button"
+            [ngStyle]="{textAlign: 'center'}"
+        >
+            Buy
+        </button>
+    </div>
+</div>
