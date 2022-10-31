@@ -108,6 +108,11 @@ label {
     padding-right: 4px;
 }
 
+.items-in-cart {
+    background-color: #74b72b;
+    color: white;
+}
+
 /* Top Bar */
 
 app-top-bar {
