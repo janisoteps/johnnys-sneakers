@@ -3,17 +3,21 @@
 </a>
 
 <a
-    class="button fancy-button"
+    [ngClass]="{'button': true, 'fancy-button': true, 'items-in-cart' : items.length > 0}"
     [ngStyle]="{display: 'flex', justifyContent: 'space-between'}"
     routerLink="/cart"
 >
     <i class="material-icons">shopping_cart</i>
     <div
         [ngStyle]="{marginRight: '5px'}"
+        [ngClass]="{'items-in-cart' : items.length > 0}"
     >
         Checkout
     </div>
-    <div *ngIf="items.length > 0">
+    <div
+        *ngIf="items.length > 0"
+        [ngClass]="{'items-in-cart' : items.length > 0}"
+    >
         - {{items.length}} items
     </div>
 </a>
