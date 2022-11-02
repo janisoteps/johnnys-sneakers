@@ -8,19 +8,23 @@ import {ShippingComponent} from "./components/shipping/shipping.component";
 const routes: Routes = [
     {
         path: '',
-        component: ProductListComponent
+        component: ProductListComponent,
+        title: 'Johnny\'s sneakers'
     },
     {
         path: 'products/:productId',
-        component: ProductDetailsComponent
+        component: ProductDetailsComponent,
+        title: 'Johnny\'s sneakers'
     },
     {
         path: 'cart',
-        component: CartComponent
+        component: CartComponent,
+        title: 'Johnny\'s sneakers'
     },
     {
         path: 'shipping',
-        component: ShippingComponent
+        component: ShippingComponent,
+        title: 'Johnny\'s sneakers'
     }
 ];
 
